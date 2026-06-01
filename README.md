@@ -23,6 +23,9 @@ Based on the final analytical model and the Power BI layout, several strategic t
 4. **Hardware Preference Matrix**: Classic Bikes are heavily favored over electric bikes for both user types across high-volume stations.
 
 ## 💾 Step-by-Step Data Transformation Pipeline (SQL)
+
+#### 🖥️**Query**: [Rider_type_top_station.sql](top_start_&_end_stations.sql)
+
 To construct a highly performant and balanced dashboard without rendering the BI application sluggish, the raw transactional trip data was aggregated and optimized using a highly structured SQL script (available in the project files).
 
 **The pipeline was built using the following structural phases:**
@@ -58,7 +61,9 @@ Applied the ROW_NUMBER() window function, partitioned by month and traffic type,
 - Configured synchronized categorical dropdown slicers at the top of the interface for Month and Traffic Type (Start/End).
 - Adjusted model relationship behaviors to allow cross-filtering, allowing a single slicer selection to instantly filter structural calculations across all visual frames simultaneously.
 
-![Cyclistic Dashboard Demo](../Divvy%20Trips%20Clean%20Dataset/video.gif)
+![Cyclistic Dashboard Demo](video.gif)
+<gif src="video.gif" width="50%">
+
 
 
 ## 🚀 How to Use / Reproduce
